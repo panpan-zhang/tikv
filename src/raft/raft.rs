@@ -1311,7 +1311,7 @@ impl<T: Storage> Raft<T> {
                                          &mut more_to_send);
         if maybe_commit {
             if self.maybe_commit() {
-                self.bcast_append();
+                // self.bcast_append();
             } else if old_paused {
                 // update() reset the wait state on this node. If we had delayed sending
                 // an update before, send it now.
