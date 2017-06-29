@@ -59,6 +59,7 @@ quick_error! {
         }
         KeyLength {description("bad format key(length)")}
         KeyPadding {description("bad format key(padding)")}
+        KeyNotFound {description("key not found")}
         InvalidDataType(reason: String) {
             description("invalid data type")
             display("{}", reason)
